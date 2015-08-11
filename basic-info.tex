@@ -1,11 +1,17 @@
 \documentclass[11pt]{article}
 
-\usepackage[paperwidth=4.25in,paperheight=5.5in,top=0.5in,bottom=0.25in,left=0.25in,right=0.25in]{geometry}
+\usepackage[paperwidth=8.5in,paperheight=11in,margin=0.25in,landscape]{geometry}
+\usepackage{multicol}
 \usepackage{textcomp} % for copyleft symbol
 
 \newcommand{\foss}{FOSS}
 
+\setlength{\columnsep}{0.5in}
+\def\columnseprule{0.5pt}
+
 \begin{document}
+\begin{multicols*}{2}
+%%%%%%%% PAGE 1 %%%%%%%%
 
 \begin{center} \scshape \LARGE
     Linux Users Group
@@ -23,6 +29,13 @@ While we are there, we often help each other troubleshoot problems, seek out
 software to use, and help new users learn about and to install Linux on their
 laptops.
 
+%%%%%%%% END  1 %%%%%%%%
+\vfill
+\phantom{x}
+\columnbreak{}
+%%%%%%%% PAGE 2 %%%%%%%%
+
+\phantom{x}
 \vfill
 \begin{center} \tiny
     % Discreetly include the year, so we know how old printed our copies of this
@@ -31,4 +44,6 @@ laptops.
     No rights reserved. \\
     Git Version \input{git-describe}
 \end{center}
+%%%%%%%% END  2 %%%%%%%%
+\end{multicols*}
 \end{document}
