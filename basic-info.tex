@@ -1,11 +1,13 @@
 \documentclass[11pt]{article}
 
-\usepackage[paperwidth=8.5in,paperheight=11in,margin=0.25in,landscape]{geometry}
+\usepackage[margin=0.25in,landscape]{geometry}
 \usepackage{multicol}
 \usepackage{textcomp} % for copyleft symbol
 \usepackage{lipsum}   % for dummy text
+\usepackage{tabulary} % for fixed-width tables
 
 \newcommand{\foss}{FOSS}
+\newcommand{\tbd}{TBD}
 
 \setlength{\columnsep}{0.5in}
 \def\columnseprule{0.5pt}
@@ -25,18 +27,18 @@
     Every Wednesday, Noon to 1 p.m. in ITE 234
 \end{center}
 
+\section*{Who We Are}
+
+We are students who use or want to use Linux. We meet weekly to chat and help
+each other solve problems, and organize other events to promote free and open
+source software.
+
 % May want to re-order these, though ``What is linux'' is probably a good thing to open
 % with.
 \section*{What Is Linux}
 
 Linux is an operating system similar to OS X or Windows, except that it is free
 and open source, built by volunteers over the years since 1991.
-
-\section*{Who We Are}
-
-We are students who use or want to use Linux. We meet weekly to chat and help
-each other solve problems, and organize other events to promote free and open
-source software.
 
 
 \section*{What We Do}
@@ -54,13 +56,13 @@ source software.
 
 \section*{Events}
 
-\begin{itemize}
-    \item InstallFest; let us help you install Linux on your laptop
-    \item Lectures and workshops; free and open source software-related talks by
-        members and guests
-    \item Open air open problems; brief talks on open problems hosted in open
+\begin{tabular*}{0.9\textwidth}{p{2.5cm}cp{8cm}}
+    InstallFest            & \tbd & let us help you install Linux on your laptop \\
+    Lectures and workshops & \tbd & free and open source software-related talks by
+        members and guests \\
+    Open air open problems & \tbd & brief talks on open problems hosted in open
         spaces.
-\end{itemize}
+\end{tabular*}
 
 
 %%%%%%%% END  1 %%%%%%%%
