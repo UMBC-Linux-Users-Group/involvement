@@ -1,0 +1,2 @@
+MATMSG:TO:sympa@lists.umbc.edu;SUB:SUBSCRIBE umbclinux;BODY:;;
+
