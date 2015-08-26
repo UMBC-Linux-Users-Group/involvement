@@ -2,10 +2,12 @@
 
 \usepackage[margin=0.25in,landscape]{geometry}
 \usepackage{multicol}
+\usepackage{graphicx} % for including graphics
 \usepackage{textcomp} % for copyleft symbol
 \usepackage{lipsum}   % for dummy text
 \usepackage{tabulary} % for fixed-width tables
 \usepackage{booktabs} % for fancy horizontal rules
+\usepackage{wrapfig}  % for small QR codes
 
 \newcommand{\foss}{FOSS}
 \newcommand{\tbd}{TBD}
@@ -55,6 +57,15 @@ and open source, built by volunteers over the years since 1991.
 \item Tutorials for developer tools
 \end{itemize}
 
+\begin{wrapfigure}{r}{0.3\hsize}
+    \vspace{-3em}
+    \begin{center}
+        \includegraphics[width=\hsize]{mailing-signup-qr}
+        \vspace{-3em}
+        \parbox{\hsize}{ \centering Scan to join the mailing list }
+    \end{center}
+\end{wrapfigure}
+
 \section*{Events}
 
 %%%%%%%% END  1 %%%%%%%%
@@ -82,13 +93,13 @@ and open source, built by volunteers over the years since 1991.
     VPS for Fun and Profit & Sept~30 & David Lachut on what he does with his
     personal servers \\
 
+    Introduction to Puppet & Oct~1 & Nick Miller talks about the basics of Puppet \\
+
     Linux Awareness Week & \mbox{Oct~9-16} & Celebrate and be aware of
         Linux in your life in the week leading up to Installfest. \\
 
     InstallFest & Oct~16 & Let us help you try Linux, or install it
         for you. \\
-
-    Introduction to Puppet & TBD & Nick Miller talks about the basics of Puppet \\
 
     Inside Git & TBD & Alexander Bauer on Git and its internals \\
 
