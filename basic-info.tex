@@ -4,17 +4,9 @@
 \usepackage{multicol}
 \usepackage{graphicx} % for including graphics
 \usepackage{textcomp} % for copyleft symbol
-\usepackage{lipsum}   % for dummy text
 \usepackage{tabulary} % for fixed-width tables
 \usepackage{booktabs} % for fancy horizontal rules
 \usepackage{wrapfig}  % for small QR codes
-\usepackage{enumitem} % for changing list item spacing
-\usepackage{titlesec} % for changing section header spacing
-
-% Remove space between list items (requires enumitem)
-\setlist{itemsep=1pt,topsep=3pt}
-
-\titlespacing\section{0pt}{4pt}{2pt}
 
 \newcommand{\foss}{FOSS}
 \newcommand{\tbd}{TBD}
@@ -29,7 +21,7 @@
 \begin{center} \scshape \Huge
     %\phantom{x}
     Linux Users' Group
-    \vspace{-1em}
+%    \vspace{-1em}
 \end{center}
 
 \begin{center} \Large
@@ -37,7 +29,7 @@
     Every Wednesday, Noon to 1 p.m. in ITE 234
 \end{center}
 
-\vspace{-3em}
+%\vspace{-3em}
 
 \section*{About Us}
 
@@ -54,34 +46,34 @@ answers.
 
 \section*{Why Linux?}
 
-\begin{itemize}
-\item Linux is free.
+\subsubsection*{Linux is free.}
 
-  Both the operating system and most of the software we use on it are developed by
-  volunteers and have their source code posted online. Each Linux distribution has
-  thousands of useful programs available in online repositories ready to be downloaded and
-  installed for free.
+%Both the operating system and most of the software we use on it are developed by
+%volunteers and have their source code posted online. Each Linux distribution has
+%thousands of useful programs available in online repositories ready to be
+%downloaded and installed for free.
 
-\item Linux is customizable.
+\subsubsection*{Linux is customizable.}
 
-  Linux users can choose what software to install to customize their
-  distribution to their liking. This includes everything from graphical
-  elements, like how windows look, to core system configuration, like which
-  background processes are started at boot.
+%Linux users can choose what software to install to customize their distribution
+%to their liking. This includes everything from graphical elements, like how
+%windows look, to core system configuration, like which background processes are
+%started at boot.
 
-\item Linux runs everywhere.
+\subsubsection*{Linux runs everywhere.}
 
-  Because it is free, and highly customizable, Linux is popular for a huge variety of use
-  cases. Web servers, mobile divices, and integrated systems all frequently run
-  Linux. Learning to use it (even if you don't end up keeping it as your desktop operating
-  system, which we hope you do) is a very useful job skill for any programmer.
+%Because it is free, and highly customizable, Linux is popular for a huge variety
+%of use cases. Web servers, mobile divices, and integrated systems all frequently
+%run Linux. Learning to use it (even if you don't end up keeping it as your
+%desktop operating system, which we hope you do) is a very useful job skill for
+%any programmer.
 
-\end{itemize}
+%\end{itemize}
 
 %%%%%%%% END  1 %%%%%%%%
-%% \vfill
-%% \phantom{x}
-%% \columnbreak{}
+\vfill
+\phantom{x}
+\columnbreak{}
 %%%%%%%% PAGE 2 %%%%%%%%
 
 \renewcommand{\arraystretch}{1.8}
@@ -109,20 +101,6 @@ answers.
     Inside Git & TBD & Alexander Bauer on Git and its internals \\
 
 \end{tabular*}
-
-% Change back to wrapfigure if we figure out something to put that wraps around this:
-% Uncomment wrapfigure lines and vspace. Change inner widths back to just \hsize.
-% Change inner parbox to remove wrapping parbox.
-%%\begin{wrapfigure}{r}{0.3\hsize}
-%%  \vspace{-2em}
-    \begin{center}
-        \includegraphics[width=0.3\hsize]{mailing-signup-qr}
-        \vspace{-3em}
-        \parbox{\hsize}{\centering \parbox{0.3\hsize}{ \centering Scan to join the mailing list }}
-    \end{center}
-%%end{wrapfigure}
-
-~
 
 \phantom{x}
 \vfill
