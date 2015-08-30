@@ -8,6 +8,14 @@
 \usepackage{tabulary} % for fixed-width tables
 \usepackage{booktabs} % for fancy horizontal rules
 \usepackage{wrapfig}  % for small QR codes
+\usepackage{enumitem} % for changing list item spacing
+\usepackage{titlesec} % for changing section header spacing
+
+% Remove space between list items (requires enumitem)
+\setlist{itemsep=1pt,topsep=3pt}
+
+
+\titlespacing\section{0pt}{4pt}{2pt}
 
 \newcommand{\foss}{FOSS}
 \newcommand{\tbd}{TBD}
@@ -55,23 +63,40 @@ and open source, built by volunteers over the years since 1991.
 \item Help beginning users get installed and set up on Linux.
 \item Advice and support for beginning users.
 \item Tutorials for developer tools
+\item Promote Linux and Free, Open-Source Software
 \end{itemize}
 
-\begin{wrapfigure}{r}{0.3\hsize}
-    \vspace{-3em}
-    \begin{center}
-        \includegraphics[width=\hsize]{mailing-signup-qr}
-        \vspace{-3em}
-        \parbox{\hsize}{ \centering Scan to join the mailing list }
-    \end{center}
-\end{wrapfigure}
+\section*{Why Linux?}
 
-\section*{Events}
+\begin{itemize}
+\item Linux is free.
+
+  Both the operating system and most of the software we use on it are developed by
+  volunteers and have their source code posted online. Each linux distribution has
+  thousands of useful programs available in online repositories ready to be downloaded and
+  installed for free.
+
+\item Linux is customizable.
+
+  Different groups which distribute Linux package it with different software to suit
+  different needs. Linux users can choose what software to install to customize their
+  distribution to their liking. Available customization includes everything from graphical
+  elements like what windows look like to core system configurationg like which background
+  processes are started at boot, and when they are started.
+
+\item Linux runs everywhere.
+
+  Because it is free, and highly customizable, Linux is popular for a huge variety of use
+  cases. Web servers, mobile divices, and integrated systems all frequently run
+  Linux. Learning to use it (even if you don't end up keeping it as your desktop operating
+  system, which we hope you do) is a very useful job skill for any programmer.
+
+\end{itemize}
 
 %%%%%%%% END  1 %%%%%%%%
-\vfill
-\phantom{x}
-\columnbreak{}
+%% \vfill
+%% \phantom{x}
+%% \columnbreak{}
 %%%%%%%% PAGE 2 %%%%%%%%
 
 %%%%%%%%% OLD %%%%%%%%%
@@ -104,6 +129,20 @@ and open source, built by volunteers over the years since 1991.
     Inside Git & TBD & Alexander Bauer on Git and its internals \\
 
 \end{tabular*}
+
+% Change back to wrapfigure if we figure out something to put that wraps around this:
+% Uncomment wrapfigure lines and vspace. Change inner widths back to just \hsize.
+% Change inner parbox to remove wrapping parbox.
+%%\begin{wrapfigure}{r}{0.3\hsize}
+%%  \vspace{-2em}
+    \begin{center}
+        \includegraphics[width=0.3\hsize]{mailing-signup-qr}
+        \vspace{-3em}
+        \parbox{\hsize}{\centering \parbox{0.3\hsize}{ \centering Scan to join the mailing list }}
+    \end{center}
+%%end{wrapfigure}
+
+~
 
 \phantom{x}
 \vfill
