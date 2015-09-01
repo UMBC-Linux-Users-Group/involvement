@@ -4,8 +4,16 @@
 
 \usepackage{tabulary} % for fixed-width tables
 \usepackage{multicol} % for table headings
+\usepackage{wrapfig}  % for the small QR code
+\usepackage{graphicx} % for includegraphics
 
 \begin{document}
+
+\begin{wrapfigure}{r}{0.1\textwidth}
+    \vspace{-0.54\textheight}
+    \includegraphics[width=\hsize]{mailing-signup-qr}
+\end{wrapfigure}
+
 
 \begin{center}
     {\Huge \scshape Linux Users' Group \\}
@@ -13,7 +21,6 @@
 \begin{center}
     {\LARGE Mailing List Signup}
 \end{center}
-
 
 \renewcommand{\arraystretch}{2}
 \begin{tabular*}{\hsize}{%
